@@ -2,23 +2,82 @@
 <html>
 
     <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miranda Nover</title>
         <style>
-            img {
-                width:100%;
+            * {
+            box-sizing: border-box;
             }
-            body {
-                background-image: url("images/pinkBackground.png");
+            body{
+            font-family:"Optima", sans-serif;
+            text-align: justify;
+            }
+            .header {
+            background:white;
+            padding: 15px; 
+            color:black;
+            font-size:11pt;
+            text-align: left;
+            }
+            .main-body {
+            float: right;
+            width: 70%;
+            padding: 0px 80px 20px 20px;
+            }
+            .left-sidebar {
+            float: left;
+            width: 30%;
+            padding: 0px 20px 10px 80px;
+            }
+
+            footer {
+            background:#dbf7ff;
+            float: left;
+            width: 100%;
+            padding: 30px;
+            height: 80px;
+            text-align: center;
+            }
+            
+            @media only screen and (max-width:768px) {
+            /* Desktops/Tablets: */
+            .main-body {
+                width: 70%;
+                }
+
+            .left-sidebar {
+                width: 30%;
+            }
+            }
+
+            @media only screen and (max-width:568px) {
+            /* For mobile phones: */
+
+            .main-body, .left-sidebar {width:100%;
+                        }
+            .main-body {
+                padding: 0px 20px 0px 20px;
+                }
+
+            .left-sidebar {
+                padding: 0px 30px 3px 20px;
+                }
             }
         </style>
-        <meta charset ="utf-8">
-        <title>Miranda Nover</title>
+
     </head>
     <body>
-        <h1>Miranda Nover</h1>
-        <h2>About</h2>
-        <h2>Projects</h2>
-        <h2>Resume</h2>
-        <img src="images/emailLogo.png" alt ="emailLogo" style="width:70px;height:60px;">
-        <img src="images/linkedIn.png" alt ="linkedIn" style="width:50px;height:40px;">
+
+    <div class="header">
+    <h1>MIRANDA NOVER</h1>
+    </div>
+    <div class="main-body">
+    </div>
+    <div class="left-sidebar">
+        <h2>ABOUT</h2>
+        <h2>WORK</h2>
+        <h2>PROJECTS</h2>
+    </div>
     </body>
 </html>
